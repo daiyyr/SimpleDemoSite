@@ -1,0 +1,3 @@
+login,password
+manager,e8rn35
+admin,8fjiz3

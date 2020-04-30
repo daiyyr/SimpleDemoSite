@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+/* WebAppSkins.com */
+
+.gradient37, .gradient47, .gradient67 { -moz-border-radius:6px;}
+
+.header ul.menu li.active a, .header ul.menu li a:hover { -moz-border-radius:4px;}
+.header ul.menuicon li a.mini { -moz-border-radius:4px;}
+.header ul.menu ul, .header ul.menu ul ul { -moz-border-radius:6px;}
+.gadget .servicons li a.serv { -moz-border-radius:4px;}
+.gadget .gadget_content .subblock { -moz-border-radius:6px;}
+.gadget .titlebar a.closegadget { -moz-border-radius:2px;}
+#dialogboxes .window { -moz-border-radius:6px;}

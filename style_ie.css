@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+/* WebAppSkins.com */
+
+/* main */
+a.blackbutton { padding:7px 12px;}
+
+/* header */
+.header ul.menu { margin:40px 0 0 0; padding:8px 8px 7px 8px;}
+.header ul.menu li a { line-height:32px;}
+p.aright span.gradient37 { border:none; background:none;}
+
+/* content */
+.gadget .tab_content ul.icons li a.lorem { margin-top:12px; padding:2px 0; display:block; font-weight:bold; color:#ecfdd0; text-decoration:none;}
+.err_mes a.close_mess { margin:-41px 0 0 0;}
+
+/* contact */
+form input.ie_text { margin:-4px 0; width:140px; height:15px;}
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+#datepicker .ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}

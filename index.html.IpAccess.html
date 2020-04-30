@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="style_moz.css" rel="stylesheet" type="text/css" />
+<!--[iflt IE 8]>
+<link href="style_IE.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/clock.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header" >
+    <div class="header_res" >
+      <a href="https://go.uxtrata.com/"><img src="images/simpleapp-logo-t.png"  alt="Logo" class="logo" /></a>
+      <ul class="menu gradient47" style="display:none">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="forms.html">Services</a>
+          <ul>
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+            <li><a href="#">Service 4</a></li>
+            <li><a href="#">Service 5</a></li>
+          </ul>
+        </li>
+        <li><a href="messages.html">Portfolio</a>
+          <ul>
+            <li><a href="#">Portfolio 1</a></li>
+            <li><a href="#">Portfolio 2</a></li>
+            <li><a href="#">Portfolio 3</a></li>
+          </ul>
+        </li>
+        <li><a href="tables.html">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="clr" ></div>
+      <ul class="menuicon"  style="display:none">
+        <li><a target="_blank" href="http://192.168.230.20:32122"><img src="images/icon_c01.gif" alt="picture" width="32" height="29" /></a><br /><a href="#" class="mini">Connect</a></li>
+        <li><a target="_blank" href="http://192.168.230.20:8081/sapp_sms"><img src="images/icon_h1.gif" alt="picture" width="32" height="29" /></a><br /><a target="_blank" href="#" class="mini">Core</a></li>
+        <li><a target="_blank" href="http://192.168.230.20:33111"><img src="images/icon_c10.gif" alt="picture" width="32" height="29" /></a><br /><a href="#" class="mini">Vault</a></li>
+        <li><a target="_blank" href="https://www.uxtratapay.net"><img src="images/icon_c63.gif" alt="picture" width="32" height="29" /></a><br /><a href="#" class="mini">UxtrataPay</a></li>
+      </ul>
+      <p class="aright rightelems"  >
+		<div style="display:none">
+			Logged in as <a href="#" class="black">User Name</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<span class="gradient37">
+			  <a href="#"><img src="images/email.gif" alt="picture" width="16" height="12" class="email" /></a><a href="#"><strong>37</strong></a> incoming messages &nbsp;&nbsp;
+			  <a href="#"><img src="images/button_logout.gif" alt="picture" width="16" height="16" class="logout" /></a><a href="#" class="black">logout</a>
+			</span>&nbsp;&nbsp;
+			<a href="#dialog1" class="gradient37" name="modal">Dialog Box</a>&nbsp;&nbsp;
+		</div>
+		<a  id="terms_b" href="#dialog2" class="gradient37" style="float:right" name="modal">Terms and Conditions</a>
+		<p style="margin-top:70px; margin-left:20px"><strong><font size="5" color="#31447D">Welcome to Uxtrata Demo Site</font></strong></p>
+      </p>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+	<div >
+	  <!-- CONTENT -->
+	  <div class="content">
+		<div class="content_res">
+
+		  <div class="gadget" style="display:none">
+			<!-- error -->
+			<div class="gadget_title gradient37">
+			  <a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+			  <h3>Critical Important message</h3>
+			</div>
+			<div class="gadget_content error_msg em_orange">
+			  <p>
+				
+			  </p>
+			</div>
+		  </div>
+
+		  <!-- LEFT BLOCK -->
+		  <div class="leftblock vertsortable">
+
+			<!-- gadget left 1 -->
+			<div class="gadget">
+			  <div class="gadget_title gradient37 vertsortable_head" style="display:none">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>Date &amp; Mail</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+					<p class="timeclock"><span id="tm">11:57</span></p>
+					  <!-- Datepicker -->
+					  <div id="datepicker"></div>
+					  <div class="clr"></div>
+					  <p style="display:none">&nbsp;&nbsp;<a href="#" class="gradient37">+  Add Event</a>&nbsp;&nbsp;<a href="#" class="gradient37">List Events</a></p>
+
+				</div>
+			  </div>
+			  
+			</div>
+
+			<!-- gadget left 2 -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <a href="#"><img src="images/icon_l1.gif" alt="picture" width="32" height="26" class="leftimg" /></a>
+				  <p class="msg_cnt">12</p><p class="msg_lnk"><a href="#"><strong>Messages &raquo;</strong></a></p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- gadget left 3 -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_title gradient37 vertsortable_head">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>Dashboard</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <ul class="grayarrow withlines">
+					<li class="first"><a href="#">Admin area example</a></li>
+					<li><a href="#">Forms and fields area example</a></li>
+					<li class="last"><a href="#">Tables area example</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+
+			<!-- gadget left 4 -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_title gradient37 vertsortable_head">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>News of the day</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <a href="#"><img src="images/icon_l2.gif" alt="picture" width="32" height="26" class="leftimg" /></a>
+				  <h4 class="big">Notice</h4>
+				  <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /><a href="#"><strong>Learn More &raquo;</strong></a></p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- gadget left 5 -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_title gradient37 vertsortable_head">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>Quick contact form</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <form action="" method="post" id="form_quickcontact" class="form_quickcontact">
+				  <ol><li>
+					<label for="name">Your name:</label>
+					<input id="name" name="name" class="text" />
+					<div class="clr"></div>
+				  </li><li>
+					<label for="email">Your contact email:</label>
+					<input id="email" name="email" class="text" />
+					<div class="clr"></div>
+				  </li><li>
+					<label for="message">Your questons &amp; comments:</label>
+					<textarea id="message" name="message" rows="6" cols="50"></textarea>
+					<div class="clr"></div>
+				  </li><li>
+					<a href="#" class="gradient37">Contact us now</a>
+					<!-- <input type="image" name="imageField" id="imageField" src="images/button_send.gif" class="send" /> -->
+					<div class="clr"></div>
+				  </li></ol>
+				  </form>
+				</div>
+			  </div>
+			</div>
+
+		  </div>
+
+		  <!-- RIGHT BLOCK -->
+		  <div class="rightblock vertsortable">
+
+			<!-- gadget slider -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_content tabs">
+				<ul>
+				  <li><a href="#tab-1" class="gradient37">Table example 1</a></li>
+				  <li><a href="#tab-2" class="gradient37">Table example 2</a></li>
+				  <li><a href="#tab-3" class="gradient37">Table example 3</a></li>
+				</ul>
+				<div class="clr"></div>
+				<div class="slide sl_blue" id="tab-1">
+				  <h2>Your Server Statistic</h2>
+				  <p class="white">Monthly <strong>Bandwidth Transfer</strong> &nbsp;|&nbsp; 507.92 / 400000 MB &nbsp;|&nbsp; <a href="#">expand stats</a></p>
+				  <p><a href="#" class="gradient47"><img src="images/icon_comp.gif" alt="picture" width="30" height="30" />Refresh server stats</a></p>
+				</div>
+				<div class="slide sl_pink" id="tab-2">
+				  <h2>Your Server Statistic</h2>
+				  <p class="white">Monthly <strong>Bandwidth Transfer</strong> &nbsp;|&nbsp; 507.92 / 400000 MB &nbsp;|&nbsp; <a href="#">expand stats</a></p>
+				  <p><a href="#" class="gradient47"><img src="images/icon_comp.gif" alt="picture" width="30" height="30" />Refresh server stats</a></p>
+				</div>
+				<div class="slide sl_green" id="tab-3">
+				  <h2>Your Server Statistic</h2>
+				  <p class="white">Monthly <strong>Bandwidth Transfer</strong> &nbsp;|&nbsp; 507.92 / 400000 MB &nbsp;|&nbsp; <a href="#">expand stats</a></p>
+				  <p><a href="#" class="gradient47"><img src="images/icon_comp.gif" alt="picture" width="30" height="30" />Refresh server stats</a></p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- gadget right 1 -->
+			<div class="gadget">
+			  <div class="gadget_title gradient37 vertsortable_head" style="display:none">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>Table example 1</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <ul class="servicons">
+					<li><a target="_blank" href="http://192.168.230.20:32122"><img src="images/icon_c01.gif" width="32" height="32" alt="Connect" class="gradient67" /></a><a href="#" class="serv">Connect</a></li>
+					<li><a target="_blank" href="http://192.168.230.20:8081/sapp_sms"><img src="images/icon_c02.gif" width="32" height="32" alt="Core" class="gradient67" /></a><a href="#" class="serv">Core</a></li>
+					<li><a target="_blank" href="http://192.168.230.20:33111"><img src="images/icon_c03.gif" width="32" height="32" alt="Vault" class="gradient67" /></a><a href="#" class="serv">Vault</a></li>
+					<li><a target="_blank" href="https://www.uxtratapay.net"><img src="images/icon_c63.gif" width="32" height="32" alt="UxtrataPay" class="gradient67" /></a><a href="#" class="serv">UxtrataPay</a></li>
+				  </ul>
+				  <div class="clr"></div>
+				  <p>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+				  </p>
+				  <p style="display:none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into el <a href="#"><strong>software like Aldus PageMaker including versions of Lorem Ipsum &raquo;</strong></a></p>
+				  <p style="    margin-left: 175px;">Copyright © 2012-2019 Uxtrata Limited. All Rights Reserved. <strong><a href="http://go.uxtrata.com/General%20Terms%20and%20Conditions.pdf" > Terms</a></strong> </p>
+				</div>
+			  </div>
+			</div>
+			
+			<!-- gadget right 2 -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_title gradient37 vertsortable_head">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>Table example 2</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <div class="block3inline">
+					<a href="#"><img src="images/icon_c41.gif" alt="picture" width="48" height="48" class="icon" /></a>
+					<div class="descr"><h4>Featured Service 1</h4><p>Lorem Ipsum is simply dummy text of the printing</p><p><a href="#"><strong>Continue reading &raquo;</strong></a></p>
+					</div>
+				  </div>
+				  <div class="block3inline">
+					<a href="#"><img src="images/icon_c42.gif" alt="picture" width="48" height="48" class="icon" /></a>
+					<div class="descr"><h4>Featured Service 2</h4><p>Lorem Ipsum is simply dummy text of the printing</p><p><a href="#"><strong>Continue reading &raquo;</strong></a></p>
+					</div>
+				  </div>
+				  <div class="block3inline">
+					<a href="#"><img src="images/icon_c43.gif" alt="picture" width="48" height="48" class="icon" /></a>
+					<div class="descr"><h4>Featured Service 3</h4><p>Lorem Ipsum is simply dummy text of the printing</p><p><a href="#"><strong>Continue reading &raquo;</strong></a></p>
+					</div>
+				  </div>
+				  <div class="clr"></div>
+				</div>
+			  </div>
+			</div>
+
+			<!-- gadget right 3 -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_title gradient37 vertsortable_head">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>Table example 3</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <h4 class="big">Featured questions from our clients?</h4>
+				  <p>Lorem Ipsum is simply dummy text of the printing</p>
+				  <p><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into</em></p>
+				  <p>- <strong>John Doe</strong>, companyname.com</p>
+				</div>
+			  </div>
+			</div>
+			
+			<!-- more gadgets in line -->
+			<div class="gadgets3par horizsortable" style="display:none">
+
+			  <!-- gadget right 4a -->
+			  <div class="gadget gadget3inline" style="display:none">
+				<div class="gadget_title gradient37 horizsortable_head">
+				  <a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				  <h3>Administration Options</h3>
+				</div>
+				<div class="gadget_content">
+				  <div class="subblock">
+					<a href="#"><img src="images/icon_c61.gif" alt="picture" width="32" height="32" class="icon" /></a>
+					<div class="descr"><h4>Lorem Ipsum is</h4><p><a href="#">Simply dummy text of the printing and typesetting industry.</a></p></div>
+					<div class="clr"></div>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+				  </div>
+				</div>
+			  </div>
+
+			  <!-- gadget right 4b -->
+			  <div class="gadget gadget3inline" style="display:none">
+				<div class="gadget_title gradient37 horizsortable_head">
+				  <a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				  <h3>Administration Options</h3>
+				</div>
+				<div class="gadget_content">
+				  <div class="subblock">
+					<a href="#"><img src="images/icon_c62.gif" alt="picture" width="32" height="32" class="icon" /></a>
+					<div class="descr"><h4>Lorem Ipsum is</h4><p><a href="#">Simply dummy text of the printing and typesetting industry.</a></p></div>
+					<div class="clr"></div>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+				  </div>
+				</div>
+			  </div>
+
+			  <!-- gadget right 4c -->
+			  <div class="gadget gadget3inline" style="display:none">
+				<div class="gadget_title gradient37 horizsortable_head">
+				  <a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				  <h3>Administration Options</h3>
+				</div>
+				<div class="gadget_content">
+				  <div class="subblock">
+					<a href="#"><img src="images/icon_c63.gif" alt="picture" width="32" height="32" class="icon" /></a>
+					<div class="descr"><h4>Lorem Ipsum is</h4><p><a href="#">Simply dummy text of the printing and typesetting industry.</a></p></div>
+					<div class="clr"></div>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="clr"></div>
+			</div>
+
+			<!-- gadget right 5 -->
+			<div class="gadget" style="display:none">
+			  <div class="gadget_title gradient37 vertsortable_head">
+				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+				<h3>Administration Options</h3>
+			  </div>
+			  <div class="gadget_content">
+				<div class="subblock">
+				  <form action="" method="post" id="form_userstable">
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="gwlines">
+				  <tr>
+					<th width="40"><input name="utc1" id="utc1" type="checkbox" /></th>
+					<th width="100">Name</th>
+					<th width="100">Username</th>
+					<th width="90">Date</th>
+					<th width="120">Location</th>
+					<th>E-mail</th>
+					<th colspan="2">Actions</th>
+				  </tr>
+				  <tr>
+					<td><input name="utc1" id="utc2" type="checkbox" class="utc" /></td>
+					<td>John Smith</td>
+					<td>jonnysmi</td>
+					<td>12.24.1980</td>
+					<td>San Francisco, CA</td>
+					<td><a href="mailto:mwwweefail@yahoo.com">mwwweefail@yahoo.com</a></td>
+					<td width="28"><a href="#"><img src="images/pimpa_yes.gif" alt="picture" width="15" height="15" class="tabpimpa" /></a></td>
+					<td width="28"><a href="#"><img src="images/pimpa_no.gif" alt="picture" width="15" height="15" class="tabpimpa" /></a></td>
+				  </tr>
+				  <tr>
+					<td><input name="utc1" id="utc3" type="checkbox" class="utc" /></td>
+					<td>John Smith</td>
+					<td>jonnysmi</td>
+					<td>12.24.1980</td>
+					<td>San Francisco, CA</td>
+					<td><a href="mailto:mail@yahoo.com">mail@yahoo.com</a></td>
+					<td><a href="#"><img src="images/pimpa_yes.gif" alt="picture" width="15" height="15" class="tabpimpa" /></a></td>
+					<td><a href="#"><img src="images/pimpa_no.gif" alt="picture" width="15" height="15" class="tabpimpa" /></a></td>
+				  </tr>
+				  <tr class="last">
+					<td><input name="utc1" id="utc4" type="checkbox" class="utc" /></td>
+					<td>John Smith</td>
+					<td>jonnysmi</td>
+					<td>12.24.1980</td>
+					<td>San Francisco, CA</td>
+					<td><a href="mailto:m13dail@yahoo.com">m13dail@yahoo.com</a></td>
+					<td><a href="#"><img src="images/pimpa_yes.gif" alt="picture" width="15" height="15" class="tabpimpa" /></a></td>
+					<td><a href="#"><img src="images/pimpa_no.gif" alt="picture" width="15" height="15" class="tabpimpa" /></a></td>
+				  </tr>
+				  </table>
+				  </form>
+				</div>
+			  </div>
+			</div>
+			
+		  </div>
+
+		  <div class="clr"></div>
+		</div>
+	  </div>
+	  
+	  <!-- FOOTER -->
+	  <div class="footer" style="display:none">
+		<div class="footer_res">
+		  <ul>
+			<li class="first"><a href="index.html">Home</a></li>
+			<li><a href="">Administration</a></li>
+			<li><a href="">Settings</a></li>
+			<li><a href="">Contact</a></li>
+		  </ul>
+		  <div class="clr"></div>
+		  <a href="#"><img src="images/logo_footer.jpg" width="300" height="116" alt="logo" class="logo" /></a>
+		  <p class="aright"><a href="http://www.dreamtemplate.com"><img src="images/icon_f1.gif" alt="picture" width="27" height="23" /></a>Website Administration by <a href="http://www.webappskins.com"><strong>WebAppSkins</strong></a></p>
+		  <div class="clr"></div>
+		</div>
+	  </div>
+
+	</div>
+	
+	
+	
+  <!-- DIALOGS -->
+  <div id="dialogboxes">
+    <!-- dialog 1 -->
+    <div id="dialog1" class="window">
+      <div class="gadget gadget_noclearance">
+        <div class="gadget_title gradient37">
+          <a href="#" class="close closegadget"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+          <h3>Thank you for</h3>
+        </div>
+        <div class="gadget_content">
+          <div class="subblock">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text</strong> ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+            <div class="linehr"></div>
+            <p><a href="#" class="gradient37">Start Demo - Login Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dialog 2 -->
+    <div id="dialog2" class="window">
+      <div class="gadget gadget_noclearance">
+        <div class="gadget_title gradient37">
+          <a style="display:none" href="#" class="close closegadget"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+          <h3>Welcome to Uxtrata Services</h3>
+        </div>
+        <div class="gadget_content">
+          <div class="subblock">
+            
+			<form action="" method="post" id="loginform" class="form_login">
+				<ol>
+					<li>
+					  <label for="login1">Login:</label>
+					  <input id="login1" name="login1" class="text" />
+					  <div class="clr"></div>
+					</li>
+					<li>
+					  <label for="password1">Password:</label>
+					  <input id="password1" name="password1" class="text" type="password" />
+					  <div class="clr"></div>
+					</li>
+				</ol>
+            </form>
+            <p>Copyright © 2012-2019 Uxtrata Limited. All Rights Reserved. <strong><a href="http://go.uxtrata.com/General%20Terms%20and%20Conditions.pdf" > Terms</a></strong> </p>
+			
+			<label><input type="checkbox" id="checkbox_agree" checked="True" value="value">I have read and agree to above Terms</label>
+			<br/>
+			<br/>
+			<br/>
+            <p><a href="#" class="gradient37" id="close_b">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mask to cover the whole screen -->
+    <div id="mask"></div>
+  </div>
+	
+	
+</div>
+		
+	
+</body>
+</html>
+
+
