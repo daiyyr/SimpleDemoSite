@@ -43,6 +43,7 @@ $(function() {$('#datepicker').datepicker({inline:true});});
 
 	//select all the a tag with name equal to modal
 	$('a[name=modal]').click(function(e) {
+		
 		//Cancel the link behavior
 		e.preventDefault();
 		

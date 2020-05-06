@@ -12,14 +12,38 @@
 <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/clock.js"></script>
+<style>
+
+.leftblock {
+    margin-right: 8px;
+    float: left;
+    width: 241px;
+}
+
+</style>
 </head>
-<body>
+<body
+style="
+	  background-color: rgb(240,240,250);
+
+"
+>
 <div class="container">
 
   <!-- HEADER -->
-  <div class="header" >
+  <div class="header" 
+  style="
+  height: 180px
+  "
+  >
     <div class="header_res" >
-      <a href="https://go.uxtrata.com/"><img src="images/simpleapp-logo-t.png"  alt="Logo" class="logo" /></a>
+      <a href="https://go.uxtrata.com/"><img src="images/LOGO_white.png" style="
+	width: 20%;
+    left: 6%;
+    position: absolute;
+        /* top: 8%; */
+    margin-top: 60px;
+	  "  alt="Logo" class="logo" /></a>
       <ul class="menu gradient47" style="display:none">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="forms.html">Services</a>
@@ -46,7 +70,7 @@
         <li><a target="_blank" href="http://demo.uxtrata.net/sapp_sms_301"><img src="images/icon_c01.gif" alt="picture" width="32" height="29" /></a><br /><a href="#" class="mini">Connect</a></li>
         <li><a target="_blank" href="http://demo.uxtrata.net:8081/sapp_sms"><img src="images/icon_h1.gif" alt="picture" width="32" height="29" /></a><br /><a target="_blank" href="#" class="mini">Core</a></li>
         <li><a target="_blank" href="http://demo.uxtrata.net:33111"><img src="images/icon_c10.gif" alt="picture" width="32" height="29" /></a><br /><a href="#" class="mini">Vault</a></li>
-        <li><a target="_blank" href="https://www.uxtratapay.net"><img src="images/icon_c63.gif" alt="picture" width="32" height="29" /></a><br /><a href="#" class="mini">UxtrataPay</a></li>
+        <li><a target="_blank" href="https://www.uxtratapay.net"><img src="images/icon_c63.gif" alt="picture" width="32" height="29" /></a><br /><a href="#" class="mini">Uxtrata Pay</a></li>
       </ul>
       <p class="aright rightelems"  >
 		<div style="display:none">
@@ -57,8 +81,7 @@
 			</span>&nbsp;&nbsp;
 			<a href="#dialog1" class="gradient37" name="modal">Dialog Box</a>&nbsp;&nbsp;
 		</div>
-		<a  id="terms_b" href="#dialog2" class="gradient37" style="float:right" name="modal">Terms and Conditions</a>
-		<p style="margin-top:70px; margin-left:20px"><strong><font size="5" color="#31447D">Welcome to Uxtrata Demo Site</font></strong></p>
+		<a  id="terms_b" href="#dialog2" class="gradient37" style="float:right;display:none" name="modal">Terms and Conditions</a>
       </p>
       <div class="clr"></div>
     </div>
@@ -66,9 +89,23 @@
 
 	<div >
 	  <!-- CONTENT -->
-	  <div class="content">
-		<div class="content_res">
-
+	  <div class="content" style="
+	  background: none;
+	  background-color: rgb(240,240,250);
+	  ">
+			<p style="
+	color: black;
+    position: absolute;
+    /* top: 40%; */
+    margin-top: 70px;
+	width: 100%;
+    align-content: center;
+    text-align: center;
+	font-family: Poppins;
+    font-size: 35px;
+	"><strong>Welcome to Uxtrata Demo Site</strong></p>
+		<div class="content_res" style="padding:0">
+			
 		  <div class="gadget" style="display:none">
 			<!-- error -->
 			<div class="gadget_title gradient37">
@@ -83,7 +120,10 @@
 		  </div>
 
 		  <!-- LEFT BLOCK -->
-		  <div class="leftblock vertsortable">
+		  <div class="leftblock vertsortable" style="
+		  margin-top: 120px;
+		  
+		  ">
 
 			<!-- gadget left 1 -->
 			<div class="gadget">
@@ -92,7 +132,13 @@
 				<h3>Date &amp; Mail</h3>
 			  </div>
 			  <div class="gadget_content">
-				<div class="subblock">
+				<div class="subblock" 
+				style="
+    -moz-border-radius: 6px;
+    height: 300px;
+	        box-shadow: 2px 0 4px 2px #999;
+			"
+				>
 					<p class="timeclock"><span id="tm">11:57</span></p>
 					  <!-- Datepicker -->
 					  <div id="datepicker"></div>
@@ -103,84 +149,164 @@
 			  </div>
 			  
 			</div>
-
-			<!-- gadget left 2 -->
-			<div class="gadget" style="display:none">
+		  </div>
+		  
+		  <!-- LEFT BLOCK 2-->
+		  <div class="leftblock vertsortable" style="
+		  margin-top: 120px;
+		  ">
+			<!-- gadget left 1 -->
+			<div class="gadget">
 			  <div class="gadget_content">
-				<div class="subblock">
-				  <a href="#"><img src="images/icon_l1.gif" alt="picture" width="32" height="26" class="leftimg" /></a>
-				  <p class="msg_cnt">12</p><p class="msg_lnk"><a href="#"><strong>Messages &raquo;</strong></a></p>
+				<div class="subblock" style="
+				    background-color: white;
+    -moz-border-radius: 6px;
+    height: 300px;
+	        box-shadow: 2px 0 4px 2px #999;
+				">
+					<p class="timeclock" style="
+					    color: black;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 20px;
+    margin-top: 30px;
+					">Accounting Management</p>
+					<a target="_blank" href="https://demo.uxtrata.net/sapp_sms_301">
+						<img src="images/logo_uxtrata.png" alt="Connect" 
+						style="
+						    width: 80%;
+    margin-left: 20px;
+    margin-top: 30px;
+						"
+						/>
+					</a>
 				</div>
 			  </div>
+			  
 			</div>
-
-			<!-- gadget left 3 -->
-			<div class="gadget" style="display:none">
-			  <div class="gadget_title gradient37 vertsortable_head">
-				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
-				<h3>Dashboard</h3>
-			  </div>
+		  </div>
+		  
+		  <!-- LEFT BLOCK 3-->
+		  <div class="leftblock vertsortable" style="
+		  margin-top: 120px;
+		  ">
+		  
+			<!-- gadget left 1 -->
+			<div class="gadget">
 			  <div class="gadget_content">
-				<div class="subblock">
-				  <ul class="grayarrow withlines">
-					<li class="first"><a href="#">Admin area example</a></li>
-					<li><a href="#">Forms and fields area example</a></li>
-					<li class="last"><a href="#">Tables area example</a></li>
-				  </ul>
+				<div class="subblock" style="
+				    background-color: white;
+    -moz-border-radius: 6px;
+    height: 300px;
+	        box-shadow: 2px 0 4px 2px #999;
+				">
+					<p class="timeclock" style="
+					    color: black;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 20px;
+    margin-top: 30px;
+					">Smart <br/> Transactions</p>
+					<a target="_blank" href="">
+						<img src="images/Group 8@2x.png" alt="Connect" 
+						style="
+height: 16%;
+    margin-left: 40px;
+    margin-top: 15px;
+    align-self: center;
+						"
+						/>
+					</a>
+					<a target="_blank" href="https://www.uxtratapay.net">
+						<img src="images/Group 20@2x.png" alt="Connect" 
+						style="
+height: 16%;
+    margin-left: 25px;
+    margin-top: 30px;
+						"
+						/>
+					</a>
 				</div>
 			  </div>
+			  
 			</div>
-
-			<!-- gadget left 4 -->
-			<div class="gadget" style="display:none">
-			  <div class="gadget_title gradient37 vertsortable_head">
-				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
-				<h3>News of the day</h3>
-			  </div>
-			  <div class="gadget_content">
-				<div class="subblock">
-				  <a href="#"><img src="images/icon_l2.gif" alt="picture" width="32" height="26" class="leftimg" /></a>
-				  <h4 class="big">Notice</h4>
-				  <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /><a href="#"><strong>Learn More &raquo;</strong></a></p>
-				</div>
-			  </div>
-			</div>
-
-			<!-- gadget left 5 -->
-			<div class="gadget" style="display:none">
-			  <div class="gadget_title gradient37 vertsortable_head">
-				<a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
-				<h3>Quick contact form</h3>
-			  </div>
-			  <div class="gadget_content">
-				<div class="subblock">
-				  <form action="" method="post" id="form_quickcontact" class="form_quickcontact">
-				  <ol><li>
-					<label for="name">Your name:</label>
-					<input id="name" name="name" class="text" />
-					<div class="clr"></div>
-				  </li><li>
-					<label for="email">Your contact email:</label>
-					<input id="email" name="email" class="text" />
-					<div class="clr"></div>
-				  </li><li>
-					<label for="message">Your questons &amp; comments:</label>
-					<textarea id="message" name="message" rows="6" cols="50"></textarea>
-					<div class="clr"></div>
-				  </li><li>
-					<a href="#" class="gradient37">Contact us now</a>
-					<!-- <input type="image" name="imageField" id="imageField" src="images/button_send.gif" class="send" /> -->
-					<div class="clr"></div>
-				  </li></ol>
-				  </form>
-				</div>
-			  </div>
-			</div>
-
 		  </div>
 
+		  <!-- LEFT BLOCK 4-->
+		  <div class="leftblock vertsortable" style="
+		  margin-top: 120px;
+		  ">
+		  
+			<!-- gadget left 1 -->
+			<div class="gadget">
+			  <div class="gadget_content">
+				<div class="subblock" style="
+				    background-color: white;
+    -moz-border-radius: 6px;
+    height: 300px;
+	        box-shadow: 2px 0 4px 2px #999;
+				">
+					<p class="timeclock" style="
+					    color: black;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 20px;
+    margin-top: 30px;
+					">Management</p>
+					<a target="_blank" href="https://demo.uxtrata.net:32111">
+						<img src="images/Group 11@2x.png" alt="Connect" 
+						style="
+    height: 14%;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-self: center;
+						"
+						/>
+					</a>
+					<a target="_blank" href="">
+						<img src="images/Group 14@2x.png" alt="Connect" 
+						style="
+    height: 14%;
+    margin-left: 20px;
+    margin-top: 10px;
+						"
+						/>
+					</a>
+					
+					<a target="_blank" href="">
+						<img src="images/Group 17@2x.png" alt="Connect" 
+						style="
+    height: 14%;
+    margin-left: 20px;
+    margin-top: 10px;
+						"
+						/>
+					</a>
+					<a target="_blank" href="https://demo.uxtrata.net:32112">
+						<img src="images/Group -1@2x.png" alt="Connect" 
+						style="
+    height: 14%;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-self: center;
+						"
+						/>
+					</a>
+					
+					
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
 		  <!-- RIGHT BLOCK -->
-		  <div class="rightblock vertsortable">
+		  <div class="rightblock vertsortable" style="display:none">
 
 			<!-- gadget slider -->
 			<div class="gadget" style="display:none">
@@ -221,7 +347,7 @@
 					<li><a target="_blank" href="https://demo.uxtrata.net/sapp_sms_301"><img src="images/icon_c01.gif" width="32" height="32" alt="Connect" class="gradient67" /></a><a href="#" class="serv">Connect</a></li>
 					<li><a target="_blank" href="http://demo.uxtrata.net:8081/sapp_sms"><img src="images/icon_c02.gif" width="32" height="32" alt="Core" class="gradient67" /></a><a href="#" class="serv">Core</a></li>
 					<li><a target="_blank" href="https://demo.uxtrata.net:32111"><img src="images/icon_c03.gif" width="32" height="32" alt="Vault" class="gradient67" /></a><a href="#" class="serv">Vault</a></li>
-					<li><a target="_blank" href="https://www.uxtratapay.net"><img src="images/icon_c63.gif" width="32" height="32" alt="UxtrataPay" class="gradient67" /></a><a href="#" class="serv">UxtrataPay</a></li>
+					<li><a target="_blank" href="https://www.uxtratapay.net"><img src="images/icon_c63.gif" width="32" height="32" alt="UxtrataPay" class="gradient67" /></a><a href="#" class="serv">Uxtrata Pay</a></li>
 				  </ul>
 				  <div class="clr"></div>
 				  <p>
@@ -398,19 +524,25 @@
 	  </div>
 	  
 	  <!-- FOOTER -->
-	  <div class="footer" style="display:none">
-		<div class="footer_res">
-		  <ul>
-			<li class="first"><a href="index.html">Home</a></li>
-			<li><a href="">Administration</a></li>
-			<li><a href="">Settings</a></li>
-			<li><a href="">Contact</a></li>
-		  </ul>
-		  <div class="clr"></div>
-		  <a href="#"><img src="images/logo_footer.jpg" width="300" height="116" alt="logo" class="logo" /></a>
-		  <p class="aright"><a href="http://www.dreamtemplate.com"><img src="images/icon_f1.gif" alt="picture" width="27" height="23" /></a>Website Administration by <a href="http://www.webappskins.com"><strong>WebAppSkins</strong></a></p>
-		  <div class="clr"></div>
-		</div>
+	  <div class="footer" style="
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-size-adjust: auto;
+    font-size: 14px;
+    font-family: poppins;
+    font-weight: lighter;
+	">
+		              <p style="margin:0px;color:black;">Copyright © 2012-2020 Uxtrata Limited. All Rights Reserved. <strong><a style="color: rgb(37,0,104);" href="http://go.uxtrata.com/General%20Terms%20and%20Conditions.pdf" > Terms</a></strong> </p>
+
 	  </div>
 
 	</div>
