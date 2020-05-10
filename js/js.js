@@ -43,7 +43,6 @@ $(function() {$('#datepicker').datepicker({inline:true});});
 
 	//select all the a tag with name equal to modal
 	$('a[name=modal]').click(function(e) {
-		
 		//Cancel the link behavior
 		e.preventDefault();
 		
@@ -58,8 +57,8 @@ $(function() {$('#datepicker').datepicker({inline:true});});
 		$('#mask').css({'width':maskWidth,'height':maskHeight});
 		
 		//transition effect
-		$('#mask').fadeIn(1000);	
-		$('#mask').fadeTo("slow", 1);	
+		$('#mask').fadeIn(1);	
+		$('#mask').fadeTo("fast", 1);
 	
 		//Get the window height and width
 		var winH = $(window).height();
